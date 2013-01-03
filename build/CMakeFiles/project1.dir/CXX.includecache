@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/daze/Documents/Workspace/Hacks/gtest-cmake-example/project1.cpp
+iostream
+-
+project1.h
+/Users/daze/Documents/Workspace/Hacks/gtest-cmake-example/project1.h
+
+/Users/daze/Documents/Workspace/Hacks/gtest-cmake-example/project1.h
+iostream
+-
+
