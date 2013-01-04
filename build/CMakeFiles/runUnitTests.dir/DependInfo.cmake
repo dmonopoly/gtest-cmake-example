@@ -12,4 +12,5 @@ SET(CMAKE_CXX_COMPILER_ID "GNU")
 SET(CMAKE_TARGET_LINKED_INFO_FILES
   "/Users/daze/Documents/Workspace/Hacks/gtest-cmake-example/build/lib/gtest-1.6.0/CMakeFiles/gtest.dir/DependInfo.cmake"
   "/Users/daze/Documents/Workspace/Hacks/gtest-cmake-example/build/lib/gtest-1.6.0/CMakeFiles/gtest_main.dir/DependInfo.cmake"
+  "/Users/daze/Documents/Workspace/Hacks/gtest-cmake-example/build/CMakeFiles/project1_lib.dir/DependInfo.cmake"
   )

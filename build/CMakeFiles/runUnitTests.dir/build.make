@@ -82,6 +82,7 @@ runUnitTests_EXTERNAL_OBJECTS =
 runUnitTests: CMakeFiles/runUnitTests.dir/test_project1.cpp.o
 runUnitTests: lib/gtest-1.6.0/libgtest.a
 runUnitTests: lib/gtest-1.6.0/libgtest_main.a
+runUnitTests: libproject1_lib.a
 runUnitTests: lib/gtest-1.6.0/libgtest.a
 runUnitTests: CMakeFiles/runUnitTests.dir/build.make
 runUnitTests: CMakeFiles/runUnitTests.dir/link.txt

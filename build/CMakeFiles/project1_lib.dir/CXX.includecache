@@ -6,9 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/Users/daze/Documents/Workspace/Hacks/gtest-cmake-example/main.cpp
-iostream
--
+/Users/daze/Documents/Workspace/Hacks/gtest-cmake-example/project1.cpp
 project1.h
 /Users/daze/Documents/Workspace/Hacks/gtest-cmake-example/project1.h
 

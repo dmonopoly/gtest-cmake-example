@@ -3,8 +3,6 @@
 
 #include <iostream> // IO access
 
-using namespace std;
-
 class Project1 {
 
 public:
@@ -16,10 +14,6 @@ public:
 
 };
 
-void independentMethod(int &i) {
-	// Should be implemented in the .h, not the .cpp.
-	// Otherwise, test can't find independentMethod
-	i = 0;
-}
+void independentMethod(int &i);
 
 #endif /* PROJECT1_H_ */

@@ -53,15 +53,15 @@ lib/gtest-1.6.0/CMakeFiles/gtest.dir/src/gtest-all.cc.o: lib/gtest-1.6.0/CMakeFi
 lib/gtest-1.6.0/CMakeFiles/gtest.dir/src/gtest-all.cc.o: ../lib/gtest-1.6.0/src/gtest-all.cc
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/daze/Documents/Workspace/Hacks/gtest-cmake-example/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object lib/gtest-1.6.0/CMakeFiles/gtest.dir/src/gtest-all.cc.o"
-	cd /Users/daze/Documents/Workspace/Hacks/gtest-cmake-example/build/lib/gtest-1.6.0 && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS)  -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -o CMakeFiles/gtest.dir/src/gtest-all.cc.o -c /Users/daze/Documents/Workspace/Hacks/gtest-cmake-example/lib/gtest-1.6.0/src/gtest-all.cc
+	cd /Users/daze/Documents/Workspace/Hacks/gtest-cmake-example/build/lib/gtest-1.6.0 && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -g -Wall -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -o CMakeFiles/gtest.dir/src/gtest-all.cc.o -c /Users/daze/Documents/Workspace/Hacks/gtest-cmake-example/lib/gtest-1.6.0/src/gtest-all.cc
 
 lib/gtest-1.6.0/CMakeFiles/gtest.dir/src/gtest-all.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gtest.dir/src/gtest-all.cc.i"
-	cd /Users/daze/Documents/Workspace/Hacks/gtest-cmake-example/build/lib/gtest-1.6.0 && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS)  -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -E /Users/daze/Documents/Workspace/Hacks/gtest-cmake-example/lib/gtest-1.6.0/src/gtest-all.cc > CMakeFiles/gtest.dir/src/gtest-all.cc.i
+	cd /Users/daze/Documents/Workspace/Hacks/gtest-cmake-example/build/lib/gtest-1.6.0 && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -g -Wall -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -E /Users/daze/Documents/Workspace/Hacks/gtest-cmake-example/lib/gtest-1.6.0/src/gtest-all.cc > CMakeFiles/gtest.dir/src/gtest-all.cc.i
 
 lib/gtest-1.6.0/CMakeFiles/gtest.dir/src/gtest-all.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gtest.dir/src/gtest-all.cc.s"
-	cd /Users/daze/Documents/Workspace/Hacks/gtest-cmake-example/build/lib/gtest-1.6.0 && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS)  -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -S /Users/daze/Documents/Workspace/Hacks/gtest-cmake-example/lib/gtest-1.6.0/src/gtest-all.cc -o CMakeFiles/gtest.dir/src/gtest-all.cc.s
+	cd /Users/daze/Documents/Workspace/Hacks/gtest-cmake-example/build/lib/gtest-1.6.0 && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -g -Wall -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -S /Users/daze/Documents/Workspace/Hacks/gtest-cmake-example/lib/gtest-1.6.0/src/gtest-all.cc -o CMakeFiles/gtest.dir/src/gtest-all.cc.s
 
 lib/gtest-1.6.0/CMakeFiles/gtest.dir/src/gtest-all.cc.o.requires:
 .PHONY : lib/gtest-1.6.0/CMakeFiles/gtest.dir/src/gtest-all.cc.o.requires

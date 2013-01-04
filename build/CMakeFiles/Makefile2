@@ -56,7 +56,7 @@ CMAKE_BINARY_DIR = /Users/daze/Documents/Workspace/Hacks/gtest-cmake-example/bui
 # Target rules for target CMakeFiles/project1.dir
 
 # All Build rule for target.
-CMakeFiles/project1.dir/all:
+CMakeFiles/project1.dir/all: CMakeFiles/project1_lib.dir/all
 	$(MAKE) -f CMakeFiles/project1.dir/build.make CMakeFiles/project1.dir/depend
 	$(MAKE) -f CMakeFiles/project1.dir/build.make CMakeFiles/project1.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /Users/daze/Documents/Workspace/Hacks/gtest-cmake-example/build/CMakeFiles  3
@@ -69,7 +69,7 @@ all: CMakeFiles/project1.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/project1.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/daze/Documents/Workspace/Hacks/gtest-cmake-example/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/daze/Documents/Workspace/Hacks/gtest-cmake-example/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/project1.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/daze/Documents/Workspace/Hacks/gtest-cmake-example/build/CMakeFiles 0
 .PHONY : CMakeFiles/project1.dir/rule
@@ -88,14 +88,50 @@ clean: CMakeFiles/project1.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/project1_lib.dir
+
+# All Build rule for target.
+CMakeFiles/project1_lib.dir/all:
+	$(MAKE) -f CMakeFiles/project1_lib.dir/build.make CMakeFiles/project1_lib.dir/depend
+	$(MAKE) -f CMakeFiles/project1_lib.dir/build.make CMakeFiles/project1_lib.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/daze/Documents/Workspace/Hacks/gtest-cmake-example/build/CMakeFiles  4
+	@echo "Built target project1_lib"
+.PHONY : CMakeFiles/project1_lib.dir/all
+
+# Include target in all.
+all: CMakeFiles/project1_lib.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/project1_lib.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/daze/Documents/Workspace/Hacks/gtest-cmake-example/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/project1_lib.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/daze/Documents/Workspace/Hacks/gtest-cmake-example/build/CMakeFiles 0
+.PHONY : CMakeFiles/project1_lib.dir/rule
+
+# Convenience name for target.
+project1_lib: CMakeFiles/project1_lib.dir/rule
+.PHONY : project1_lib
+
+# clean rule for target.
+CMakeFiles/project1_lib.dir/clean:
+	$(MAKE) -f CMakeFiles/project1_lib.dir/build.make CMakeFiles/project1_lib.dir/clean
+.PHONY : CMakeFiles/project1_lib.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/project1_lib.dir/clean
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/runUnitTests.dir
 
 # All Build rule for target.
-CMakeFiles/runUnitTests.dir/all: lib/gtest-1.6.0/CMakeFiles/gtest.dir/all
+CMakeFiles/runUnitTests.dir/all: CMakeFiles/project1_lib.dir/all
 CMakeFiles/runUnitTests.dir/all: lib/gtest-1.6.0/CMakeFiles/gtest_main.dir/all
+CMakeFiles/runUnitTests.dir/all: lib/gtest-1.6.0/CMakeFiles/gtest.dir/all
 	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/depend
 	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /Users/daze/Documents/Workspace/Hacks/gtest-cmake-example/build/CMakeFiles  4
+	$(CMAKE_COMMAND) -E cmake_progress_report /Users/daze/Documents/Workspace/Hacks/gtest-cmake-example/build/CMakeFiles  5
 	@echo "Built target runUnitTests"
 .PHONY : CMakeFiles/runUnitTests.dir/all
 
@@ -105,7 +141,7 @@ all: CMakeFiles/runUnitTests.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/runUnitTests.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/daze/Documents/Workspace/Hacks/gtest-cmake-example/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/daze/Documents/Workspace/Hacks/gtest-cmake-example/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/runUnitTests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/daze/Documents/Workspace/Hacks/gtest-cmake-example/build/CMakeFiles 0
 .PHONY : CMakeFiles/runUnitTests.dir/rule

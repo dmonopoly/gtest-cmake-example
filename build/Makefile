@@ -122,6 +122,19 @@ project1/fast:
 .PHONY : project1/fast
 
 #=============================================================================
+# Target rules for targets named project1_lib
+
+# Build rule for target.
+project1_lib: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 project1_lib
+.PHONY : project1_lib
+
+# fast build rule for target.
+project1_lib/fast:
+	$(MAKE) -f CMakeFiles/project1_lib.dir/build.make CMakeFiles/project1_lib.dir/build
+.PHONY : project1_lib/fast
+
+#=============================================================================
 # Target rules for targets named runUnitTests
 
 # Build rule for target.
@@ -160,12 +173,36 @@ gtest_main/fast:
 	$(MAKE) -f lib/gtest-1.6.0/CMakeFiles/gtest_main.dir/build.make lib/gtest-1.6.0/CMakeFiles/gtest_main.dir/build
 .PHONY : gtest_main/fast
 
+main.o: main.cpp.o
+.PHONY : main.o
+
+# target to build an object file
+main.cpp.o:
+	$(MAKE) -f CMakeFiles/project1.dir/build.make CMakeFiles/project1.dir/main.cpp.o
+.PHONY : main.cpp.o
+
+main.i: main.cpp.i
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cpp.i:
+	$(MAKE) -f CMakeFiles/project1.dir/build.make CMakeFiles/project1.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	$(MAKE) -f CMakeFiles/project1.dir/build.make CMakeFiles/project1.dir/main.cpp.s
+.PHONY : main.cpp.s
+
 project1.o: project1.cpp.o
 .PHONY : project1.o
 
 # target to build an object file
 project1.cpp.o:
-	$(MAKE) -f CMakeFiles/project1.dir/build.make CMakeFiles/project1.dir/project1.cpp.o
+	$(MAKE) -f CMakeFiles/project1_lib.dir/build.make CMakeFiles/project1_lib.dir/project1.cpp.o
 .PHONY : project1.cpp.o
 
 project1.i: project1.cpp.i
@@ -173,7 +210,7 @@ project1.i: project1.cpp.i
 
 # target to preprocess a source file
 project1.cpp.i:
-	$(MAKE) -f CMakeFiles/project1.dir/build.make CMakeFiles/project1.dir/project1.cpp.i
+	$(MAKE) -f CMakeFiles/project1_lib.dir/build.make CMakeFiles/project1_lib.dir/project1.cpp.i
 .PHONY : project1.cpp.i
 
 project1.s: project1.cpp.s
@@ -181,7 +218,7 @@ project1.s: project1.cpp.s
 
 # target to generate assembly for a file
 project1.cpp.s:
-	$(MAKE) -f CMakeFiles/project1.dir/build.make CMakeFiles/project1.dir/project1.cpp.s
+	$(MAKE) -f CMakeFiles/project1_lib.dir/build.make CMakeFiles/project1_lib.dir/project1.cpp.s
 .PHONY : project1.cpp.s
 
 test_project1.o: test_project1.cpp.o
@@ -216,11 +253,15 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... project1"
+	@echo "... project1_lib"
 	@echo "... rebuild_cache"
 	@echo "... runUnitTests"
 	@echo "... test"
 	@echo "... gtest"
 	@echo "... gtest_main"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 	@echo "... project1.o"
 	@echo "... project1.i"
 	@echo "... project1.s"
