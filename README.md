@@ -1,5 +1,5 @@
 # What is this?
-This is an example setup of cmake with google test. Hopefully it'll help someone get set up with C++ and google test.
+This is an example setup of cmake with google test. I got it working after consulting the google test primer, among other things. Hopefully it'll help someone get set up with C++ and google test.
 
 # Where are things?
 `build/` is where code is built - like where executables are.  
