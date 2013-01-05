@@ -21,7 +21,7 @@ TEST(IndependentMethod, ResetsToZero2) {
 	EXPECT_EQ(0, i);
 }
 
-// The fixture for testing class Project1.
+// The fixture for testing class Project1. From google test primer.
 class Project1Test : public ::testing::Test {
 protected:
 	// You can remove any or all of the following functions if its body
@@ -48,13 +48,14 @@ protected:
 	}
 
 	// Objects declared here can be used by all tests in the test case for Project1.
+	Project1 p;
 };
 
 // Test case must be called the class above
+// Also note: use TEST_F instead of TEST to access the test fixture (from google test primer)
 TEST_F(Project1Test, MethodBarDoesAbc) {
-	Project1 p;
 	int i = 0;
-	p.foo(i);
+	p.foo(i); // we have access to p, declared in the fixture
 	EXPECT_EQ(1, i);
 }
 
