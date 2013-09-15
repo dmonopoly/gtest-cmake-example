@@ -26,7 +26,7 @@ In the project root:
     cmake ..
 
 By now Makefiles should be created.
-Then, to build executables and do all that linking stuff,  
+Then, to build executables and do all that linking stuff,
 
     make
 
@@ -51,7 +51,8 @@ and if you did cmake with test=ON:
 
 ## Command things
 `cmake -Dtest=ON` turns on the variable 'test', which is specified in the root
-CMakeLists.txt file. Clear description
+CMakeLists.txt file. This is handy if you want to build in certain ways. Clear
+description
 [here](http://stackoverflow.com/questions/5998186/cmake-adding-command-line-options).
 
 ## My experience
