@@ -5,13 +5,13 @@ someone get set up with C++ and google test.
 
 # Where are things?
 `build/` is where code is built - like where executables are.  
-`lib/` includes gtest-1.6.0  
+`lib/` includes gtest-1.6.0.  
 Rest of code in root:  
 -`CMakeLists.txt` must be in each subdirectory of the project  
 -`main.cpp` is just a driver file - the common place to run the normal
 application  
 -`project1.cpp` and `project1.h` have code for the class 'Project1'  
--`test_project1.cpp` has code to test Project1.  
+-`test_project1.cpp` has code to test Project1  
 
 # What do I do?
 
