@@ -1,1 +1,0 @@
-/usr/bin/c++   -g -Wall -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/runUnitTests.dir/test_project1.cpp.o  -o runUnitTests  lib/gtest-1.6.0/libgtest.a lib/gtest-1.6.0/libgtest_main.a libproject1_lib.a lib/gtest-1.6.0/libgtest.a -lpthread 

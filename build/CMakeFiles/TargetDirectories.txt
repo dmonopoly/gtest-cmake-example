@@ -1,5 +1,0 @@
-/Users/daze/Documents/Workspace/Hacks/gtest-cmake-example/build/lib/gtest-1.6.0/CMakeFiles/gtest.dir
-/Users/daze/Documents/Workspace/Hacks/gtest-cmake-example/build/lib/gtest-1.6.0/CMakeFiles/gtest_main.dir
-/Users/daze/Documents/Workspace/Hacks/gtest-cmake-example/build/CMakeFiles/project1.dir
-/Users/daze/Documents/Workspace/Hacks/gtest-cmake-example/build/CMakeFiles/project1_lib.dir
-/Users/daze/Documents/Workspace/Hacks/gtest-cmake-example/build/CMakeFiles/runUnitTests.dir

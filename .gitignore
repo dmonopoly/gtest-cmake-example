@@ -1,1 +1,4 @@
 .DS_Store
+*.vim
+*.swp
+build/*

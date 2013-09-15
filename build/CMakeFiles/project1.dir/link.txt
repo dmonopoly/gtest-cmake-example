@@ -1,1 +1,0 @@
-/usr/bin/c++   -g -Wall -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/project1.dir/main.cpp.o  -o project1  libproject1_lib.a 
