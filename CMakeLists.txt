@@ -29,6 +29,7 @@ target_link_libraries(project1 project1_lib)
 ################################
 if (test)
   # This adds another subdirectory, which has 'project(gtest)'.
+  set( gtest_force_shared_crt ON CACHE BOOL "Always use msvcrt.dll" )
   add_subdirectory(lib/gtest-1.6.0)
 
   enable_testing()
