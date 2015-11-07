@@ -29,7 +29,7 @@ target_link_libraries(project1 project1_lib)
 ################################
 if (test)
   # This adds another subdirectory, which has 'project(gtest)'.
-  add_subdirectory(lib/gtest-1.6.0)
+  add_subdirectory(lib/gtest-1.7.0)
 
   enable_testing()
 
