@@ -1,0 +1,8 @@
+dependencies:
+  pre:
+    - mkdir build; cd build; cmake -Dtest=ON .. 
+  override:
+    - make
+test:
+  override:
+    - make test
