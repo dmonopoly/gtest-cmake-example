@@ -2,7 +2,7 @@ dependencies:
   pre:
     - mkdir build; cd build; cmake -Dtest=ON .. 
   override:
-    - make
+    - cd build; make
 test:
   override:
-    - make test
+    - cd build; make test
