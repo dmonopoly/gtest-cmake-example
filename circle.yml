@@ -1,3 +1,7 @@
+machine:
+  services:
+    - docker
+
 dependencies:
   pre:
     - mkdir build; cd build; cmake -Dtest=ON .. 
@@ -5,4 +9,4 @@ dependencies:
     - cd build; make
 test:
   override:
-    - cd build; make test
+    - docker run yutakakinjyo/gtest /bin/sh -c 'cd build && make test'
