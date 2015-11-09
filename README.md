@@ -15,7 +15,7 @@ application
 -`project1.cpp` and `project1.h` have code for the class 'Project1'  
 -`test_project1.cpp` has code to test Project1  
 CI files:  
-`Dockerfile` has buid info to CentOS6 image. That image is used by CircleCI
+`Dockerfile` has buid info to CentOS6 image. That image is used by CircleCI  
 `circle.yml` is CircleCI config file. Contants is about building container and running test.
 
 # What do I do?
