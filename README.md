@@ -3,7 +3,7 @@
 # What is this?
 
 This is an example setup of cmake with google test on CircleCI with Docker. 
-Hopefully it'll help someone get set up with C++ and google test and CI.
+Hopefully it'll help someone get set up with C++ and google test on CI service.
 
 # Where are things?
 `build/` is where code is built - like where executables are.  
@@ -14,6 +14,9 @@ Rest of code in root:
 application  
 -`project1.cpp` and `project1.h` have code for the class 'Project1'  
 -`test_project1.cpp` has code to test Project1  
+CI files:  
+`Dockerfile` has buid info to CentOS6 image. That image is used by CircleCI
+`circle.yml` is CircleCI config file. Contants is about building container and running test.
 
 # What do I do?
 
