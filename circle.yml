@@ -1,8 +1,10 @@
+machine:
+  services:
+    - docker
+
 dependencies:
-  pre:
-    - mkdir build; cd build; cmake -Dtest=ON .. 
   override:
-    - cd build; make
+    - docker build -t test .
 test:
   override:
-    - cd build; make test
+    - docker run test /bin/sh -c 'cd build && make test'
