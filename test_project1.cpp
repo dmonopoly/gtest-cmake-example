@@ -8,7 +8,7 @@
 TEST(IndependentMethod, ResetsToZero) {
 	int i = 3;
 	independentMethod(i);
-	EXPECT_EQ(1, i);
+	EXPECT_EQ(0, i);
 
 	i = 12;
 	independentMethod(i);
