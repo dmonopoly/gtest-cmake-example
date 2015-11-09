@@ -21,12 +21,3 @@ execute_process(
   COMMAND make
   WORKING_DIRECTORY ${build_dir}
 )
-
-option(test_run "Run all tests." OFF) # Makes boolean 'test' available.
-
-if(test_run)
-  execute_process(
-    COMMAND make test
-    WORKING_DIRECTORY ${build_dir}
-  )
-endif()
