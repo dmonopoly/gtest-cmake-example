@@ -9,14 +9,14 @@ Hopefully it'll help someone get set up with C++ and google test on CI service.
 `build/` is where code is built - like where executables are.  
 `lib/` includes gtest-1.7.0.  
 Rest of code in root:  
--`CMakeLists.txt` must be in each subdirectory of the project  
--`main.cpp` is just a driver file - the common place to run the normal
+- `CMakeLists.txt` must be in each subdirectory of the project  
+- `main.cpp` is just a driver file - the common place to run the normal
 application  
--`project1.cpp` and `project1.h` have code for the class 'Project1'  
--`test_project1.cpp` has code to test Project1  
+- `project1.cpp` and `project1.h` have code for the class 'Project1'  
+- `test_project1.cpp` has code to test Project1  
 CI files:  
-`Dockerfile` has buid info to CentOS6 image. That image is used by CircleCI  
-`circle.yml` is CircleCI config file. Contants is about building container and running test.
+- `Dockerfile` has buid info to CentOS6 image. That image is used by CircleCI  
+- `circle.yml` is CircleCI config file. Contants is about building container and running test.
 
 # What do I do?
 
