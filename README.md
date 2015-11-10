@@ -8,12 +8,14 @@ Hopefully it'll help someone get set up with C++ and google test on CI service.
 # Where are things?
 `build/` is where code is built - like where executables are.  
 `lib/` includes gtest-1.7.0.  
+
 Rest of code in root:  
 - `CMakeLists.txt` must be in each subdirectory of the project  
 - `main.cpp` is just a driver file - the common place to run the normal
 application  
 - `project1.cpp` and `project1.h` have code for the class 'Project1'  
 - `test_project1.cpp` has code to test Project1  
+
 CI files:  
 - `Dockerfile` has buid info to CentOS6 image. That image is used by CircleCI  
 - `circle.yml` is CircleCI config file. Contants is about building container and running test.
@@ -43,6 +45,15 @@ To run all tests easily,
 
     make test
 
+## Use Docker image
+if you want run test on Docker image ( CentOS )
+
+```
+sudo docker pull yutakakinjyo/gtest-cmake-example:master
+sudo docker run --rm=true yutakakinjyo/gtest-cmake-example:master /bin/sh -c 'cd build; make test'
+```
+
+
 ## Run executables
 Then you can do ./myexecutable for the generated executable, e.g.:
 
@@ -59,20 +70,3 @@ and if you did cmake with test=ON:
 CMakeLists.txt file. This is handy if you want to build in certain ways. Clear
 description
 [here](http://stackoverflow.com/questions/5998186/cmake-adding-command-line-options).
-
-## My experience
-I spent a lot of time figuring out how I wanted to reference the gtest library.  
-
-[On StackOverflow](http://stackoverflow.com/questions/9689183/cmake-googletest)
-there are ways to download the svn repo when you cmake, but that's internet
-connection dependent. There is also a way to set a variable for where gtest is
-installed on your system, but that got a bit tedious.  
-
-In the end I opted to just have a copy of gtest locally in whatever application
-I have that uses gtest.  
-[This user's edited
-solution](http://stackoverflow.com/questions/8507723/how-to-start-working-with-gtest-and-cmake)
-and [my own question's
-response](http://stackoverflow.com/questions/14148145/gtest-detects-method-only-when-the-method-is-implemented-in-h-not-in-cpp-cma/14157405#14157405)
-helped me out.
-
