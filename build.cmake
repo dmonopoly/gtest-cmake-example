@@ -21,8 +21,3 @@ execute_process(
   COMMAND make
   WORKING_DIRECTORY ${build_dir}
 )
-
-execute_process(
-  COMMAND make test
-  WORKING_DIRECTORY ${build_dir}
-)

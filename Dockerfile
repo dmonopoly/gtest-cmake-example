@@ -9,7 +9,4 @@ WORKDIR $PROJECT
 
 ADD . $PROJECT
 
-RUN mkdir build; \
-    cd build; \
-    cmake -Dtest=ON ..;\
-    make
+RUN cmake -P build.cmake
