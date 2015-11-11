@@ -52,7 +52,9 @@ if you want run test on Docker image ( CentOS )
 sudo docker pull yutakakinjyo/gtest-cmake-example:master
 sudo docker run --rm=true yutakakinjyo/gtest-cmake-example:master /bin/sh -c 'cd build; make test'
 ```
+## Use build script
 
+`$ cmake -P build.cmake`
 
 ## Run executables
 Then you can do ./myexecutable for the generated executable, e.g.:
