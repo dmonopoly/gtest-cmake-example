@@ -37,7 +37,7 @@ if (test)
   # 'project(gtest)' above.
 
   add_library(gtest_lib lib/gtest/gtest-all.cc)
-  include_directories(${MyProject_SOURCE_DIR}/lib/gtest ${MyProject_SOURCE_DIR}/lib)
+  include_directories(${MyProject_SOURCE_DIR}/lib)
 
   ##############
   # Unit Tests
