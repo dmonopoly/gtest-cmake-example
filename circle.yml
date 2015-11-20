@@ -8,3 +8,5 @@ dependencies:
 test:
   override:
     - docker run test /bin/sh -c 'cd build; make test'
+    - bundle
+    - bundle exec rspec
