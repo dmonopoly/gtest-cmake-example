@@ -1,6 +1,8 @@
 machine:
   services:
     - docker
+  ruby:
+    - 2.2.2
 
 dependencies:
   override:
