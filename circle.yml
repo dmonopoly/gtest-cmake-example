@@ -1,6 +1,8 @@
 machine:
   services:
     - docker
+  ruby:
+    version: 2.2.2
 
 dependencies:
   override:
@@ -8,3 +10,5 @@ dependencies:
 test:
   override:
     - docker run test /bin/sh -c 'cd build; make test'
+    - bundle
+    - bundle exec rspec
