@@ -21,6 +21,11 @@ TEST(IndependentMethod, ResetsToZero2) {
 	EXPECT_EQ(0, i);
 }
 
+TEST(IndependentMethod, EqualStr) {
+	EXPECT_STREQ("abc", "abc");
+}
+
+
 // The fixture for testing class Project1. From google test primer.
 class Project1Test : public ::testing::Test {
 protected:
