@@ -6,7 +6,3 @@ ENV PROJECT /project
 
 RUN mkdir $PROJECT
 WORKDIR $PROJECT
-
-ADD . $PROJECT
-
-RUN cmake -P build.cmake
