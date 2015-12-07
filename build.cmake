@@ -18,6 +18,7 @@ execute_process(
 
 
 execute_process(
-  COMMAND make
+  COMMAND ctest
   WORKING_DIRECTORY ${build_dir}
+  RESULT_VARIABLE test_result
 )

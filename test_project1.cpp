@@ -12,7 +12,7 @@ TEST(IndependentMethod, ResetsToZero) {
 
 	i = 12;
 	independentMethod(i);
-	EXPECT_EQ(0,i);
+	EXPECT_EQ(1,i);
 }
 
 TEST(IndependentMethod, ResetsToZero2) {

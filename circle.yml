@@ -9,6 +9,6 @@ dependencies:
     - docker build -t test .
 test:
   override:
-    - docker run --rm -v ${PWD}:/project/repo -it test /bin/sh -c 'cd repo; cmake -P build.cmake; cd build; ./runUnitTests'
+    - docker run --rm -v ${PWD}:/project/repo -it test /bin/sh -c 'cd repo; cmake -P build.cmake'
     - bundle
     - bundle exec rspec
