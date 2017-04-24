@@ -49,7 +49,7 @@ if (test)
   endif (APPLE)
 
   # This adds another subdirectory, which has 'project(gtest)'.
-  add_subdirectory(lib/gtest-1.6.0)
+  add_subdirectory(lib/gtest-1.7.0)
 
   enable_testing()
 
