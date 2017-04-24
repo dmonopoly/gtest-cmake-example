@@ -2,3 +2,7 @@
 *.vim
 *.swp
 build/*
+
+.bundle/
+Gemfile.lock
+vendor/
