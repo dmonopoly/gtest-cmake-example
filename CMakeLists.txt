@@ -7,7 +7,7 @@ option(test "Build all tests." OFF) # Makes boolean 'test' available.
 set(PROJECT_NAME MyProject)
 project(${PROJECT_NAME})
 
-set(CMAKE_CXX_FLAGS "-g -Wall")
+set(CMAKE_CXX_FLAGS "-g -Wall -DGTEST_HAS_PTHREAD=0")
 
 # force static runtime libraries for msvc builds
 if(MSVC)
@@ -49,21 +49,23 @@ if (test)
   endif (APPLE)
 
   # This adds another subdirectory, which has 'project(gtest)'.
-  add_subdirectory(lib/gtest-1.6.0)
+  # add_subdirectory(lib/gtest-1.7.0)
 
   enable_testing()
 
   # Include the gtest library. gtest_SOURCE_DIR is available due to
   # 'project(gtest)' above.
-  include_directories(${gtest_SOURCE_DIR}/include ${gtest_SOURCE_DIR})
+
+  add_library(gtest_lib lib/gtest/gtest-all.cc)
+  include_directories(${MyProject_SOURCE_DIR}/lib)
 
   ##############
   # Unit Tests
   ##############
-  add_executable(runUnitTests test_project1.cpp)
+  add_executable(runUnitTests test_project1.cpp lib/gtest/gtest_main.cc)
 
   # Standard linking to gtest stuff.
-  target_link_libraries(runUnitTests gtest gtest_main)
+  target_link_libraries(runUnitTests gtest_lib)
 
   # Extra linking for the project.
   target_link_libraries(runUnitTests project1_lib)
