@@ -43,6 +43,11 @@ target_link_libraries(project1 project1_lib)
 # Testing
 ################################
 if (test)
+  if (APPLE)
+    add_definitions(-DGTEST_USE_OWN_TR1_TUPLE)
+    add_definitions(-D__GLIBCXX__)
+  endif (APPLE)
+
   # This adds another subdirectory, which has 'project(gtest)'.
   add_subdirectory(lib/gtest-1.6.0)
 
